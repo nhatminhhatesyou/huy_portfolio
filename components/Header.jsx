@@ -12,7 +12,7 @@ const Header = () => {
                 {/*logo*/}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        Leo<span className="text-accent">.</span>
+                        Aaron<span className="text-accent">.</span>
                     </h1>
                 </Link>
 
@@ -22,7 +22,7 @@ const Header = () => {
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href='/contact'>
-                        <Button>Reach Out</Button>
+                        <Button>Contact</Button>
                     </Link>
                 </div>
 

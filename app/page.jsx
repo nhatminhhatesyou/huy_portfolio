@@ -14,17 +14,16 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Marketing Executive</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Leo Pham</span>
+              Hello I'm <br /> <span className="text-accent">Aaron Vu</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I’m a software developer growing into an AI Engineer who loves building smart, practical systems that make life easier.
-              Always exploring new ideas and open to meaningful projects that combine AI, data, and good design.
+              I’m a clown
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="https://docs.google.com/document/d/1fk6Kn6tiilrkLtjkCeEVGJ_5D5IfWPaE/export?format=pdf" target="_blank">
+              <Link href="https://drive.google.com/file/d/1FP81HPfy743DbsuRvqCKDclWevODilXU/edit" target="_blank">
                 <Button variant="outline" size='lg' className="uppercase flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />

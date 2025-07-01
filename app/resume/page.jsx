@@ -16,23 +16,23 @@ import {
 //about data
 const about = {
     title: "About me",
-    description: "Hi, I’m Leo Pham — currently a student pursuing a Master’s in Artificial Intelligence. I’m Vietnamese, currently based in Australia, and open to freelance opportunities. I enjoy learning new technologies and turning ideas into impactful digital products. Fluent in English and Vietnamese.",
+    description: "Hi, I’m Arron Vu — currently a student pursuing a Master’s in Management - Marketing. I’m Vietnamese, currently based in Australia, and open to job opportunities. I enjoy learning new technologies and turning ideas into impactful digital products. Fluent in English and Vietnamese.",
     info: [
         {
             fieldName: "Name",
-            fieldValue: "Leo Pham",
+            fieldValue: "Aaron Vu",
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+61)450 362 292",
+            fieldValue: "(+61)426 069 554",
         },
         {
             fieldName: "Experience",
             fieldValue: "4+ Years",
         },
         {
-            fieldName: "Facebook",
-            fieldValue: "Nhat Minh",
+            fieldName: "Linkedin",
+            fieldValue: "Quang Huy Vu",
         },
         {
             fieldName: "Nationality",
@@ -40,10 +40,10 @@ const about = {
         },
         {
             fieldName: "Email",
-            fieldValue: "minh.pn040401@gmail.com",
+            fieldValue: "aaronvu0409@gmail.com",
         },
         {
-            fieldName: "Freelance",
+            fieldName: "Employment status",
             fieldValue: "Available",
         },
         {
@@ -56,17 +56,22 @@ const about = {
 const experience = {
     icon: '',
     title: 'My experience',
-    description: 'I have hands-on experience in game development and full-stack web. I enjoy turning ideas into real, usable products and love learning new technologies along the way.',
+    description: 'Description',
     items: [
         {
-            company: 'Gameloft',
-            position: 'Intern',
-            duration: 'Summer 2024'
+            company: 'Global Realty, Australia',
+            position: 'Marketing Intern',
+            duration: 'Oct 2024 - Feb 2025'
         },
         {
-            company: 'Oops! Dance Studio',
-            position: 'Web Developer',
-            duration: '2024'
+            company: 'Vietcombank, Vietnam',
+            position: 'Credit risk Intern',
+            duration: 'Jun 2022 - Aug 2022'
+        },
+        {
+            company: 'Minh An Computer, Vietnam',
+            position: 'Video Content Creator',
+            duration: 'Oct 2021 - Jan 2022'
         },
     ]
 }
@@ -75,17 +80,17 @@ const experience = {
 const education = {
     icon: '',
     title: 'My education',
-    description: 'I hold a Bachelor’s degree in Computer Engineering from Hanoi University of Science and Technology, one of the top-ranked technical universities in Vietnam. I’m currently pursuing a Master’s in Artificial Intelligence at RMIT, where I’m deepening my knowledge in AI, machine learning, and real-world applications.',
+    description: 'I hold a Bachelor’s degree in .',
     items: [
         {
-            institution: 'Hanoi University of Science and Technology',
-            degree: 'Bachelor of Computer Engineering',
-            duration: '2019-2024'
+            institution: 'Foreign Trade University',
+            degree: 'Bachelor of Banking and Finance - Advanced program',
+            duration: '2019-2023'
         },
         {
-            institution: 'Royal Melbourne Institute of Technology',
-            degree: 'Master of Artificial Intelligence',
-            duration: '2025-2027'
+            institution: 'The University of Melbourne',
+            degree: 'Master of Management - Marketing',
+            duration: '2024-2026'
         },
     ]
 }
@@ -194,9 +199,9 @@ const Resume = () => {
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {education.items.map((item, index) => {
                                             return (
-                                                <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                                                <li key={index} className="bg-[#232329] h-[230px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-2">
                                                     <span className="text-accent">{item.duration}</span>
-                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                                                    <h3 className="text-xl max-w-[260px] min-h-[80px] text-center lg:text-left">{item.degree}</h3>
                                                     <div className="flex items-center gap-3">
                                                         {/* dot */}
                                                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
@@ -241,7 +246,7 @@ const Resume = () => {
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-10 max-w-[620px] mx-auto xl:mx-0">
                                     {about.info.map((item, index) => {
                                         return (
                                             <li key={index} className="flex items-center justify-center xl:justify-start gap-4">

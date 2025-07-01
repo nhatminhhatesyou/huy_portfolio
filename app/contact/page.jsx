@@ -19,17 +19,17 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: "Phone",
-        description: "(+61) 450 362 292"
+        description: "(+61) 426 069 554"
     },
     {
         icon: <FaEnvelope />,
         title: "Email",
-        description: "minh.pn040401@gmail.com"
+        description: "aaronvu0409@gmail.com"
     },
     {
         icon: <FaMapMarkerAlt />,
         title: "Address",
-        description: "80 A'Beckett Street, Melbourne VIC 3000"
+        description: "Melbourne VIC 3000"
     },
 ]
 
