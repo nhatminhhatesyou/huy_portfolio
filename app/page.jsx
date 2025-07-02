@@ -18,8 +18,9 @@ const Home = () => {
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Aaron Vu</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I’m a clown
+            <p className="max-w-[520px] mb-9 text-white/80">
+              I'm Aaron Vu, a marketing professional with a strong foundation in finance and digital marketing. Currently pursuing a Master of Management (Marketing) at the University of Melbourne, I bring a unique blend of creativity and analytical thinking to everything I do.
+
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

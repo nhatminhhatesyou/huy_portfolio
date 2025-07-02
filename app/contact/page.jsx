@@ -13,7 +13,8 @@ import {
     SelectValue
 } from "@/components/ui/select"
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedinIn } from "react-icons/fa"
+
 
 const info = [
     {
@@ -30,6 +31,11 @@ const info = [
         icon: <FaMapMarkerAlt />,
         title: "Address",
         description: "Melbourne VIC 3000"
+    },
+    {
+        icon: <FaLinkedinIn />,
+        title: "Linkedin",
+        description: "https://www.linkedin.com/in/aaronvu0409/"
     },
 ]
 

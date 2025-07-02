@@ -405,7 +405,7 @@ const info = [
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaPhoneAlt"], {}, void 0, false, {
             fileName: "[project]/app/contact/page.jsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 15
         }, this),
         title: "Phone",
@@ -414,7 +414,7 @@ const info = [
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaEnvelope"], {}, void 0, false, {
             fileName: "[project]/app/contact/page.jsx",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 15
         }, this),
         title: "Email",
@@ -423,11 +423,20 @@ const info = [
     {
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaMapMarkerAlt"], {}, void 0, false, {
             fileName: "[project]/app/contact/page.jsx",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 15
         }, this),
         title: "Address",
         description: "Melbourne VIC 3000"
+    },
+    {
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaLinkedinIn"], {}, void 0, false, {
+            fileName: "[project]/app/contact/page.jsx",
+            lineNumber: 36,
+            columnNumber: 15
+        }, this),
+        title: "Linkedin",
+        description: "https://www.linkedin.com/in/aaronvu0409/"
     }
 ];
 ;
@@ -464,12 +473,12 @@ const Contact = ()=>{
                                             children: item.icon
                                         }, void 0, false, {
                                             fileName: "[project]/app/contact/page.jsx",
-                                            lineNumber: 94,
+                                            lineNumber: 100,
                                             columnNumber: 45
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/contact/page.jsx",
-                                        lineNumber: 93,
+                                        lineNumber: 99,
                                         columnNumber: 41
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -480,7 +489,7 @@ const Contact = ()=>{
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.jsx",
-                                                lineNumber: 97,
+                                                lineNumber: 103,
                                                 columnNumber: 45
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -488,45 +497,45 @@ const Contact = ()=>{
                                                 children: item.description
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.jsx",
-                                                lineNumber: 98,
+                                                lineNumber: 104,
                                                 columnNumber: 45
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/contact/page.jsx",
-                                        lineNumber: 96,
+                                        lineNumber: 102,
                                         columnNumber: 41
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/app/contact/page.jsx",
-                                lineNumber: 92,
+                                lineNumber: 98,
                                 columnNumber: 37
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/app/contact/page.jsx",
-                        lineNumber: 89,
+                        lineNumber: 95,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/contact/page.jsx",
-                    lineNumber: 88,
+                    lineNumber: 94,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/contact/page.jsx",
-                lineNumber: 46,
+                lineNumber: 52,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/contact/page.jsx",
-            lineNumber: 45,
+            lineNumber: 51,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/contact/page.jsx",
-        lineNumber: 40,
+        lineNumber: 46,
         columnNumber: 9
     }, this);
 };

@@ -50,7 +50,7 @@ const Photo = ()=>{
                         quality: 100,
                         fill: true,
                         alt: "",
-                        className: "object-contain rounded-full"
+                        className: "object-contain rounded-full scale-100"
                     }, void 0, false, {
                         fileName: "[project]/components/Photo.jsx",
                         lineNumber: 25,

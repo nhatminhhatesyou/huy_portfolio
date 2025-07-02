@@ -1,22 +1,16 @@
 "use client"
 
-import {
-    FaHtml5,
-    FaCss3,
-    FaJs,
-    FaReact,
-    FaFigma,
-    FaNodeJs,
-} from "react-icons/fa"
-import {
-    SiTailwindcss,
-    SiNextdotjs
-} from "react-icons/si"
+import { SiAdobepremierepro, SiAdobephotoshop, SiAdobeaftereffects, SiGoogleads } from "react-icons/si";
+import { TbBrandOffice } from "react-icons/tb";
+import { CapcutIcon } from "hugeicons-react";
+import { FaMeta } from "react-icons/fa6";
+
+import Image from "next/image"
 
 //about data
 const about = {
     title: "About me",
-    description: "Hi, I’m Arron Vu — currently a student pursuing a Master’s in Management - Marketing. I’m Vietnamese, currently based in Australia, and open to job opportunities. I enjoy learning new technologies and turning ideas into impactful digital products. Fluent in English and Vietnamese.",
+    description: "Hi, I’m Aaron Vu, a student pursuing a Master of Management (Marketing) based in Australia. I’m Vietnamese and currently open to job opportunities. With experience in finance and marketing,  I bring a strong combination of analytical and creative skills.",
     info: [
         {
             fieldName: "Name",
@@ -53,10 +47,36 @@ const about = {
     ]
 }
 //experience data
+const certifications = {
+    icon: '',
+    title: 'My certifications',
+    description: 'Description',
+    items: [
+        {
+            company: 'CFA Institute',
+            title: 'CFA® Program - Completed Level 1',
+            issue_date: '2023',
+            image: '/assets/resume/cfa_badge.png'
+        },
+        {
+            company: ' FHNW School of Business',
+            title: 'Advanced Program in Banking and Finance',
+            issue_date: '2023',
+            image: '/'
+        },
+        {
+            company: 'IDP',
+            title: 'IELTS Academic - 7.0 Overall',
+            issue_date: '2023',
+            image: '/'
+        },
+    ],
+}
+//experience data
 const experience = {
     icon: '',
     title: 'My experience',
-    description: 'Description',
+    description: 'I have gained valuable experience in both finance and marketing alongside my academic studies. This combination has equipped me with a strong analytical mindset alongside creative and strategic skills.',
     items: [
         {
             company: 'Global Realty, Australia',
@@ -98,39 +118,38 @@ const education = {
 //skills data
 const skills = {
     title: "My skills",
-    description: 'I exel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.',
+    description: 'Description',
     skillList: [
         {
-            icon: <FaHtml5 />,
-            name: "html 5",
+            icon: <SiAdobepremierepro />,
+            name: "Adobe Premier",
         },
         {
-            icon: <FaCss3 />,
-            name: "css 3",
+            icon: <SiAdobephotoshop />,
+            name: "Adobe Photoshop",
         },
         {
-            icon: <FaJs />,
-            name: "javascript",
+            icon: <SiAdobeaftereffects />,
+            name: "Adobe After Effect",
         },
         {
-            icon: <FaReact />,
-            name: "react.js",
+            icon: <TbBrandOffice />,
+            name: "Microshop Office",
         },
         {
-            icon: <SiNextdotjs />,
-            name: "next.js",
+            icon: <CapcutIcon
+                size={48}
+                strokeWidth={2}
+            />,
+            name: "Capcut",
         },
         {
-            icon: <SiTailwindcss />,
-            name: "tailwind.css",
+            icon: <SiGoogleads />,
+            name: "Google Ads",
         },
         {
-            icon: <FaNodeJs />,
-            name: "node.js",
-        },
-        {
-            icon: <FaFigma />,
-            name: "figma",
+            icon: <FaMeta />,
+            name: "Meta Ads",
         },
     ]
 }
@@ -152,20 +171,39 @@ const Resume = () => {
         >
             <div className="container mx-auto">
                 <Tabs
-                    defaultValue="experience"
+                    defaultValue="about"
                     className="flex flex-col xl:flex-row gap-[60px]"
                 >
                     <TabsList
                         className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6"
                     >
-                        <TabsTrigger value="experience">Experience</TabsTrigger>
-                        <TabsTrigger value="education">Education</TabsTrigger>
-                        <TabsTrigger value="skills">Skills</TabsTrigger>
                         <TabsTrigger value="about">About me</TabsTrigger>
+                        <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="experience">Experience</TabsTrigger>
+                        <TabsTrigger value="certifications">Certifications</TabsTrigger>
+                        <TabsTrigger value="skills">Skills</TabsTrigger>
                     </TabsList>
 
                     {/* content */}
                     <div className="min-h-[70vh] w-full">
+                        {/* about */}
+                        <TabsContent value="about" className="w-full text-center xl:text-left">
+                            <div className="flex flex-col gap-[30px]">
+                                <h3 className="text-4xl font-bold">{about.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-10 max-w-[620px] mx-auto xl:mx-0">
+                                    {about.info.map((item, index) => {
+                                        return (
+                                            <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                                                <span className="text-white/60">{item.fieldName}</span>
+                                                <span className="text-xl">{item.fieldValue}</span>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
+                        </TabsContent>
+
                         {/* experience */}
                         <TabsContent value="experience" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -190,6 +228,40 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
+
+                        {/* certifications */}
+                        <TabsContent value="certifications" className="w-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{certifications.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{certifications.description}</p>
+                                <ScrollArea className="h-[500px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {certifications.items.map((item, index) => {
+                                            return (
+                                                <li key={index} className="bg-[#232329] h-[450px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                                                    <span className="text-accent">{item.issue_date}</span>
+                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.title}</h3>
+                                                    <div className="flex items-center gap-3">
+                                                        {/* dot */}
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                        <p className="text-white/60">{item.company}</p>
+                                                    </div>
+                                                    {/* cert photo */}
+                                                    <div className="relative h-[400px] lg:h-[200px] sm:h-[300px] md:h-[300px] w-full overflow-hidden rounded-2xl">
+                                                        <Image
+                                                            src={item.image}
+                                                            fill
+                                                            className="object-cover rounded-2xl"
+                                                        />
+                                                    </div>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
                         {/* education */}
                         <TabsContent value="education" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -214,6 +286,7 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
+
                         {/* skills */}
                         <TabsContent value="skills" className="w-full h-full">
                             <div className="flex flex-col gap-[30px]">
@@ -235,23 +308,6 @@ const Resume = () => {
                                                         </TooltipContent>
                                                     </Tooltip>
                                                 </TooltipProvider>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </TabsContent>
-                        {/* about */}
-                        <TabsContent value="about" className="w-full text-center xl:text-left">
-                            <div className="flex flex-col gap-[30px]">
-                                <h3 className="text-4xl font-bold">{about.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-10 max-w-[620px] mx-auto xl:mx-0">
-                                    {about.info.map((item, index) => {
-                                        return (
-                                            <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                                                <span className="text-white/60">{item.fieldName}</span>
-                                                <span className="text-xl">{item.fieldValue}</span>
                                             </li>
                                         )
                                     })}
