@@ -13,6 +13,7 @@ import {
     SelectValue
 } from "@/components/ui/select"
 
+import Link from "next/link"
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedinIn } from "react-icons/fa"
 
 
@@ -35,7 +36,12 @@ const info = [
     {
         icon: <FaLinkedinIn />,
         title: "Linkedin",
-        description: "https://www.linkedin.com/in/aaronvu0409/"
+        description: <Link
+            href="https://www.linkedin.com/in/aaronvu0409/"
+            className="hover:text-accent"
+            target="_blank"
+        >
+            Quang Huy Vu </Link>,
     },
 ]
 
