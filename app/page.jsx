@@ -14,12 +14,12 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Marketing Executive</span>
+            <span className="text-xl">Brand Executive</span>
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Aaron Vu</span>
             </h1>
             <p className="max-w-[520px] mb-9 text-white/80">
-              I'm Aaron Vu, a marketing professional with a strong foundation in finance and digital marketing. Currently pursuing a Master of Management (Marketing) at the University of Melbourne, I bring a unique blend of creativity and analytical thinking to everything I do.
+            I'm Aaron Vu, a brand-focused marketing professional with one year of experience in brand strategy, identity development, and multi-channel communication. I love exploring what makes a brand meaningful and turning those insights into clear, creative stories that connect with people. I bring a blend of creativity, strategic thinking, and analytical insight to every brand I work with. My career goal is to become a CMO, where I can lead brand vision at scale and shape impactful, audience-centered brands that truly resonate.
 
             </p>
             {/* btn and socials */}

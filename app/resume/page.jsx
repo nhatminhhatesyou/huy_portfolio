@@ -10,7 +10,7 @@ import Image from "next/image"
 //about data
 const about = {
     title: "About me",
-    description: "Hi, I’m Aaron Vu, a student pursuing a Master of Management (Marketing) based in Australia. I’m Vietnamese and currently open to job opportunities. With experience in finance and marketing,  I bring a strong combination of analytical and creative skills.",
+    description: "Hi, I’m Aaron Vu. I’m Vietnamese and currently open to job opportunities. With experience in finance and marketing, I bring a strong combination of analytical thinking and creative problem-solving to the work I do. I’m always excited to learn, collaborate, and contribute to teams where thoughtful strategy and creativity come together.",
     info: [
         {
             fieldName: "Name",
@@ -18,7 +18,7 @@ const about = {
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+61)426 069 554",
+            fieldValue: "(+84) 963099235",
         },
         {
             fieldName: "Experience",
@@ -34,7 +34,7 @@ const about = {
         },
         {
             fieldName: "Email",
-            fieldValue: "aaronvu0409@gmail.com",
+            fieldValue: "huy145632@gmail.com",
         },
         {
             fieldName: "Employment status",
@@ -80,12 +80,12 @@ const experience = {
     items: [
         {
             company: 'Global Realty, Australia',
-            position: 'Marketing Intern',
+            position: 'Marketing Executive',
             duration: 'Oct 2024 - Feb 2025'
         },
         {
             company: 'Vietcombank, Vietnam',
-            position: 'Credit risk Intern',
+            position: 'Credit risk Executive',
             duration: 'Jun 2022 - Aug 2022'
         },
         {
@@ -109,7 +109,7 @@ const education = {
         },
         {
             institution: 'The University of Melbourne',
-            degree: 'Master of Management - Marketing',
+            degree: 'Master of Management',
             duration: '2024-2026'
         },
     ]
@@ -238,7 +238,7 @@ const Resume = () => {
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {certifications.items.map((item, index) => {
                                             return (
-                                                <li key={index} className="bg-[#232329] h-[450px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                                                <li key={index} className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                                                     <span className="text-accent">{item.issue_date}</span>
                                                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.title}</h3>
                                                     <div className="flex items-center gap-3">
@@ -247,13 +247,13 @@ const Resume = () => {
                                                         <p className="text-white/60">{item.company}</p>
                                                     </div>
                                                     {/* cert photo */}
-                                                    <div className="relative h-[400px] lg:h-[200px] sm:h-[300px] md:h-[300px] w-full overflow-hidden rounded-2xl">
+                                                    {/* <div className="relative h-[400px] lg:h-[200px] sm:h-[300px] md:h-[300px] w-full overflow-hidden rounded-2xl">
                                                         <Image
                                                             src={item.image}
                                                             fill
                                                             className="object-cover rounded-2xl"
                                                         />
-                                                    </div>
+                                                    </div> */}
                                                 </li>
                                             )
                                         })}

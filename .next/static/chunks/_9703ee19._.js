@@ -285,7 +285,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 //about data
 const about = {
     title: "About me",
-    description: "Hi, I’m Aaron Vu, a student pursuing a Master of Management (Marketing) based in Australia. I’m Vietnamese and currently open to job opportunities. With experience in finance and marketing,  I bring a strong combination of analytical and creative skills.",
+    description: "Hi, I’m Aaron Vu. I’m Vietnamese and currently open to job opportunities. With experience in finance and marketing, I bring a strong combination of analytical thinking and creative problem-solving to the work I do. I’m always excited to learn, collaborate, and contribute to teams where thoughtful strategy and creativity come together.",
     info: [
         {
             fieldName: "Name",
@@ -293,7 +293,7 @@ const about = {
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+61)426 069 554"
+            fieldValue: "(+84) 963099235"
         },
         {
             fieldName: "Experience",
@@ -309,7 +309,7 @@ const about = {
         },
         {
             fieldName: "Email",
-            fieldValue: "aaronvu0409@gmail.com"
+            fieldValue: "huy145632@gmail.com"
         },
         {
             fieldName: "Employment status",
@@ -355,12 +355,12 @@ const experience = {
     items: [
         {
             company: 'Global Realty, Australia',
-            position: 'Marketing Intern',
+            position: 'Marketing Executive',
             duration: 'Oct 2024 - Feb 2025'
         },
         {
             company: 'Vietcombank, Vietnam',
-            position: 'Credit risk Intern',
+            position: 'Credit risk Executive',
             duration: 'Jun 2022 - Aug 2022'
         },
         {
@@ -383,7 +383,7 @@ const education = {
         },
         {
             institution: 'The University of Melbourne',
-            degree: 'Master of Management - Marketing',
+            degree: 'Master of Management',
             duration: '2024-2026'
         }
     ]
@@ -723,7 +723,7 @@ const Resume = ()=>{
                                                 className: "grid grid-cols-1 lg:grid-cols-2 gap-[30px]",
                                                 children: certifications.items.map((item, index)=>{
                                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                        className: "bg-[#232329] h-[450px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1",
+                                                        className: "bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-accent",
@@ -763,22 +763,6 @@ const Resume = ()=>{
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/resume/page.jsx",
                                                                 lineNumber: 244,
-                                                                columnNumber: 53
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "relative h-[400px] lg:h-[200px] sm:h-[300px] md:h-[300px] w-full overflow-hidden rounded-2xl",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                    src: item.image,
-                                                                    fill: true,
-                                                                    className: "object-cover rounded-2xl"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/app/resume/page.jsx",
-                                                                    lineNumber: 251,
-                                                                    columnNumber: 57
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/resume/page.jsx",
-                                                                lineNumber: 250,
                                                                 columnNumber: 53
                                                             }, this)
                                                         ]

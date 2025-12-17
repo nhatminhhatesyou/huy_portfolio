@@ -186,7 +186,7 @@ const Home = ()=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-xl",
-                                children: "Marketing Executive"
+                                children: "Brand Executive"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.jsx",
                                 lineNumber: 17,
@@ -218,7 +218,7 @@ const Home = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "max-w-[520px] mb-9 text-white/80",
-                                children: "I'm Aaron Vu, a marketing professional with a strong foundation in finance and digital marketing. Currently pursuing a Master of Management (Marketing) at the University of Melbourne, I bring a unique blend of creativity and analytical thinking to everything I do."
+                                children: "I'm Aaron Vu, a brand-focused marketing professional with one year of experience in brand strategy, identity development, and multi-channel communication. I love exploring what makes a brand meaningful and turning those insights into clear, creative stories that connect with people. I bring a blend of creativity, strategic thinking, and analytical insight to every brand I work with. My career goal is to become a CMO, where I can lead brand vision at scale and shape impactful, audience-centered brands that truly resonate."
                             }, void 0, false, {
                                 fileName: "[project]/app/page.jsx",
                                 lineNumber: 21,
